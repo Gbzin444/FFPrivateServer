@@ -20,7 +20,7 @@ class handler(BaseHTTPRequestHandler):
   "force_to_restart_app": "false",
   "gdpr_version": 2,
   "is_firewall_open": "false",
-  "is_review_server": "falsev,
+  "is_review_server": "false",
   "is_server_open": "true",
   "maintenance_announcement": "",
   "maintenance_region": "",
@@ -40,3 +40,4 @@ if __name__ == '__main__':
     httpd = HTTPServer(server_address, handler)
     print(f"Servidor rodando em http://localhost:8000")
     httpd.serve_forever()
+
