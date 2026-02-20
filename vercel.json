@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/ver.php",
+      "destination": "/api/ver.py"
+    },
+    {
+      "source": "/json/reply/LoginReq",
+      "destination": "/api/login.py"
+    },
+    {
+      "source": "/json/reply/CreateMatchRequest",
+      "destination": "/api/matchmaking.py"
+    }
+  ]
+}
