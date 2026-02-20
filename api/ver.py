@@ -11,13 +11,23 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         # Emula a resposta do launcher para verificar versão
         response_data = {
-            "remote_version": "1.31.0",
-            "server_url": f"https://{self.headers.get("Host")}", # Aponta para esta mesma API
-            "cdn_url": CDN_URL,
-            "appstore_url": "https://play.google.com/store/apps/details?id=com.dts.freefireth",
-            "is_review_server": False,
-            "maintenance_announcement": "Servidor Reativado com Sucesso!",
-            "country_code": "BR"
+"appstore_url": "https://discord.gg/freefirebeta",
+  "billboard_msg": "Projeto Encerrado! | Project Closed! | Proyecto Cerrado! ...",
+  "cdn_url": "https://dl.cdn.freefiremobile.com/live/ABHotUpdates/",
+  "client_ip": "109.215.144.208",
+  "code": 0,
+  "country_code": "FR",
+  "force_to_restart_app": false,
+  "gdpr_version": 2,
+  "is_firewall_open": false,
+  "is_review_server": false,
+  "is_server_open": true,
+  "maintenance_announcement": "",
+  "maintenance_region": "",
+  "query_params": {},
+  "remote_option_version": "1.0.0",
+  "remote_version": "1",
+  "server_url": "https://api.luna-corp.online/"
         }
         self.send_response(200)
         self.send_header("Content-type", "application/json")
@@ -29,4 +39,5 @@ if __name__ == '__main__':
     server_address = ("", 8000)
     httpd = HTTPServer(server_address, handler)
     print(f"Servidor rodando em http://localhost:8000")
+
     httpd.serve_forever()
