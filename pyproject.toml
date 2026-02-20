@@ -1,0 +1,12 @@
+[project]
+name = "ServerFF"
+version = "0.1.0"
+description = "API de hospedagem do ff"
+dependencies = [
+    "fastapi",
+    "uvicorn"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
