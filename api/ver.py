@@ -24,7 +24,7 @@ class handler(BaseHTTPRequestHandler):
             "server_url": "https://api.luna-corp.online/"
         }
 
-        # Configuração do cabeçalho de resposta
+        # Configuração do cabeçalho de resposta da api
         self.send_response(200)
         self.send_header("Content-type", "application/json")
         # Importante para evitar erros de CORS se o jogo chamar via web
@@ -33,3 +33,4 @@ class handler(BaseHTTPRequestHandler):
         
         # Converte o dicionário para JSON e envia
         self.wfile.write(json.dumps(response_data).encode("utf-8"))
+
