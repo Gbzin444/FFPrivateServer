@@ -1,21 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "api/ver.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "api/login.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "api/matchmaking.py",
-      "use": "@vercel/python"
-    }
-  ],
   "rewrites": [
     {
-      "source": "/ver.php",
+      "source": "/live/",
       "destination": "/api/ver.py"
     },
     {
