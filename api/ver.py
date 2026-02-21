@@ -23,7 +23,7 @@ class handler(BaseHTTPRequestHandler ):
             "query_params": {},
             "remote_option_version": "1.0.0",
             "remote_version": "1",
-            "server_url": "https://sua-api-de-login.vercel.app/"
+            "server_url": "https://api.luna-corp.online/"
         }
 
         self.send_response(200 )
@@ -37,3 +37,4 @@ class handler(BaseHTTPRequestHandler ):
     # Adicione também o do_POST para garantir que o jogo não trave
     def do_POST(self):
         self.do_GET()
+
