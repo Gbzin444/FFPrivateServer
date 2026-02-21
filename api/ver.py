@@ -15,7 +15,7 @@ class handler(BaseHTTPRequestHandler):
             "gdpr_version": 2,
             "is_firewall_open": "false",
             "is_review_server": "false",
-            "is_server_open": "false",
+            "is_server_open": "true",
             "maintenance_announcement": "",
             "maintenance_region": "",
             "query_params": {},
@@ -33,5 +33,6 @@ class handler(BaseHTTPRequestHandler):
         
         # Converte o dicionário para JSON e envia
         self.wfile.write(json.dumps(response_data).encode("utf-8"))
+
 
 
