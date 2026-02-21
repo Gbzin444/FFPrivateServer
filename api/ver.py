@@ -17,7 +17,7 @@ class handler(BaseHTTPRequestHandler):
             "is_review_server": "false",
             "is_server_open": "true",
             "maintenance_announcement": "",
-            "maintenance_region": "FR",
+            "maintenance_region": "true",
             "query_params": {},
             "remote_option_version": "1.0.0",
             "remote_version": "1",
@@ -33,6 +33,7 @@ class handler(BaseHTTPRequestHandler):
         
         # Converte o dicionário para JSON e envia
         self.wfile.write(json.dumps(response_data).encode("utf-8"))
+
 
 
 
